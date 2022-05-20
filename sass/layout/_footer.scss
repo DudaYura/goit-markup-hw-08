@@ -1,15 +1,26 @@
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0 94px 0;
+    text-align: left;
+  }
 }
 .footer .container {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .footer__container-contact {
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
   }
 }
 .footer__link-main {
@@ -63,13 +74,26 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
 }
 .footer__left-container {
-  // margin-right: 70px;
   margin-bottom: 60px;
 }
 .footer__container-center {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 .footer__soc-list {
   display: flex;
@@ -98,7 +122,9 @@
   background-color: #2196f3;
 }
 .footer__right-container {
-  // margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .footer__title-second {
   margin-top: 12px;
@@ -109,9 +135,17 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
 }
 .footer__form {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .footer__input {
   width: 100%;
@@ -128,6 +162,9 @@
 
   @media screen and (min-width: 768px) {
     width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 .footer__input::placeholder {
