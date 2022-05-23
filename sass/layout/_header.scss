@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 .header__navigation {
@@ -20,21 +21,13 @@
 .header__logo-color {
   color: #000000;
 }
-.header__menu-button {
+.header__menu-open {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-  & .header__icon-cross {
-    display: none;
-  }
-  &.is-open .header__icon-cross {
-    display: block;
-  }
-  &.is-open .header__icon-menu {
-    display: none;
-  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -143,4 +136,93 @@
   &:focus {
     color: var(--header-color);
   }
+}
+.navigation__mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.navigation__container-menu {
+  display: block;
+  margin: 0 auto;
+  max-width: 480px;
+}
+.navigation__btn-close {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  margin-bottom: 8px;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
+}
+.navigation__link-menu {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.navigation__item-menu:not(:last-child) {
+  margin-bottom: 32px;
+}
+.navigation-contacts__item-menu-tel {
+  margin-bottom: 32px;
+}
+.navigation-contacts__item-menu-email {
+  margin-bottom: 64px;
+}
+.navigation-contacts__link-tel-menu {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.navigation-contacts__link-mail-menu {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.navigation-contacts__link-soc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.navigation-contacts__list-soc {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigation-contacts__item-soc:not(:last-child)::after {
+  content: "";
+  width: 22px;
+  height: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+.navigation__container-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
