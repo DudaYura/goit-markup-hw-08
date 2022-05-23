@@ -25,11 +25,7 @@
           <a class="header__logo link" href=""
             >Web<span class="header__logo-color">Studio</span></a
           >
-          <button
-            type="button"
-            class="header__menu-open"
-            aria-expanded="false"
-          >
+          <button type="button" class="header__menu-open" aria-expanded="false">
             <svg
               width="40"
               height="40"
@@ -90,49 +86,67 @@
       </div>
       <div class="navigation__mob-menu">
         <div class="navigation__container-menu">
-          <button type="button" class="navigation__btn-close">
-            <svg 
-            width="40"
-            height="40">
-              <use
+          <div class="navigation__container-top">
+            <button type="button" class="navigation__btn-close">
+              <svg width="40" height="40">
+                <use
                   class="header__icon-cross"
                   href="./img/symbol-defs.svg#icon-cross"
                 ></use>
-            </svg>
-          </button>
-          <div class="navigation__container-wrap"></div>
-          <ul class="navigation__list-menu list">
-            <li class="navigation__item-menu">
-              <a class="navigation__link-menu link" href="">Студия</a>
-            </li>
-            <li class="navigation__item-menu">
-              <a class="navigation__link-menu link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item-menu">
-              <a class="navigation__link-menu link" href="">Контакты</a>
-            </li>
-          </ul>
-          <ul class="navigation-contacts__list-menu list">
+              </svg>
+            </button>
+            <ul class="navigation__list-menu list">
+              <li class="navigation__item-menu">
+                <a class="navigation__link-menu link current-menu" href=""
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item-menu">
+                <a class="navigation__link-menu link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item-menu">
+                <a class="navigation__link-menu link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation__container-bottom">
+            <ul class="navigation-contacts__list-menu list">
               <li class="navigation-contacts__item-menu-tel">
-                    <a class="navigation-contacts__link-tel-menu link" href="">
-                      +38 096 111 11 11</a
-                    >
-                  </li>
-                  <li class="navigation-contacts__item-menu-email">
-                    <a class="navigation-contacts__link-mail-menu link" href="">
-                      </svg>
-                      info@devstudio.com</a
-                    >
-                  </li>
-          </ul>
-                <ul class="navigation-contacts__list-soc list">
-                  <li class="navigation-contacts__item-soc"><a href="" class="navigation-contacts__link-soc link">Instagram</a></li>
-                  <li class="navigation-contacts__item-soc"><a href="" class="navigation-contacts__link-soc link">Twitter</a></li>
-                  <li class="navigation-contacts__item-soc"><a href="" class="navigation-contacts__link-soc link">Facebook</a></li>
-                  <li class="navigation-contacts__item-soc"><a href="" class="navigation-contacts__link-soc link">LinkedIn</a></li>
-                </ul>
+                <a class="navigation-contacts__link-tel-menu link" href="">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="navigation-contacts__item-menu-email">
+                <a class="navigation-contacts__link-mail-menu link" href="">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="navigation-contacts__list-soc list">
+              <li class="navigation-contacts__item-soc">
+                <a href="" class="navigation-contacts__link-soc link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="navigation-contacts__item-soc">
+                <a href="" class="navigation-contacts__link-soc link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="navigation-contacts__item-soc">
+                <a href="" class="navigation-contacts__link-soc link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="navigation-contacts__item-soc">
+                <a href="" class="navigation-contacts__link-soc link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>

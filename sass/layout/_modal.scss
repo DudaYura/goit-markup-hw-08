@@ -11,8 +11,6 @@
   transform: scale(0.5) rotate(-360deg);
 }
 .modal {
-  width: 528px;
-  height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,6 +23,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  @media screen and (max-width: 1199px) {
+    width: calc(100% - 30px);
+    max-width: 450px;
+    max-height: calc(100% - 30px);
+  }
 }
 .modal__close-btn {
   position: absolute;
@@ -64,6 +67,12 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+  @media screen and (max-width: 1199px) {
+    line-height: (30px / 20px);
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: (23px / 20px);
+  }
 }
 .modal__label {
   font-size: 12px;

@@ -90,6 +90,10 @@ img {
   border: none;
   background-color: transparent;
 }
+.header__menu-open:hover, .header__menu-open:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .header__menu-open {
     display: none;
@@ -214,6 +218,7 @@ img {
   margin-right: 10px;
 }
 .navigation-contacts__icon-tel:hover, .navigation-contacts__icon-tel:focus {
+  transition: var(--time-transition);
   color: var(--header-color);
 }
 
@@ -225,9 +230,7 @@ img {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  padding-top: 10px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  transition: var(--time-transition);
 }
 @media screen and (min-width: 768px) {
   .navigation__mob-menu {
@@ -236,9 +239,15 @@ img {
 }
 
 .navigation__container-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 480px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }
 
 .navigation__btn-close {
@@ -249,9 +258,11 @@ img {
   background-color: transparent;
   margin-left: auto;
   margin-bottom: 8px;
+  margin-right: 15px;
   cursor: pointer;
 }
 .navigation__btn-close:hover, .navigation__btn-close:focus {
+  transition: var(--time-transition);
   fill: #2196f3;
 }
 
@@ -314,10 +325,8 @@ img {
   transform: rotate(90deg);
 }
 
-.navigation__container-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.current-menu {
+  color: var(--header-color);
 }
 
 .service {
@@ -954,8 +963,6 @@ img {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -965,6 +972,13 @@ img {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: calc(100% - 30px);
+    max-width: 450px;
+    max-height: calc(100% - 30px);
+  }
 }
 
 .modal__close-btn {
@@ -1004,6 +1018,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__label {
