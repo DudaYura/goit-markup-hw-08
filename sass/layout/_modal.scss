@@ -15,6 +15,7 @@
   top: 50%;
   left: 50%;
   padding: 40px;
+  overflow-y: auto;
 
   transition: scale var(--time-transition), rotate var(--time-transition);
   transform: translate(-50%, -50%) scale(1) rotate(0);
@@ -153,13 +154,17 @@
 }
 .modal__check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 
   display: flex;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal__check-wrap-icon {
   width: 16px;

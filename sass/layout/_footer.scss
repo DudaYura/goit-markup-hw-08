@@ -4,7 +4,6 @@
   text-align: center;
 
   @media screen and (min-width: 1200px) {
-    padding: 60px 0 94px 0;
     text-align: left;
   }
 }
@@ -68,7 +67,7 @@
 .footer__text {
   margin-top: 12;
   margin-bottom: 20px;
-
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -83,6 +82,9 @@
 }
 .footer__left-container {
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .footer__container-center {
   margin-bottom: 60px;
@@ -129,6 +131,7 @@
 .footer__title-second {
   margin-top: 12px;
   margin-bottom: 20px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;

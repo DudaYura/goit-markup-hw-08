@@ -5,10 +5,7 @@
 .header__navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 60px;
-  @media screen and (min-width: 1200px) {
-  }
 }
 .header__logo {
   font-family: "Raleway";
@@ -17,6 +14,9 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-color);
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 .header__logo-color {
   color: #000000;
@@ -25,6 +25,7 @@
   display: inline-flex;
   margin: 0;
   padding: 0;
+  margin-left: auto;
   border: none;
   background-color: transparent;
   &:hover,
@@ -54,7 +55,7 @@
   }
 }
 .navigation__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .navigation-contacts__list {
@@ -115,8 +116,6 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
   &:hover,
@@ -130,6 +129,8 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 32px 0px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 .navigation-contacts__icon-email {
